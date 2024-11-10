@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Buttons for Subscribe and Sign In */
+.subscribe-btn, .sign-in-btn {
+    margin-left: 15px;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #ff4500; /* Orange color for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover, .sign-in-btn:hover {
+    background-color: #ff5733; /* Darker orange on hover */
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #333;
+    margin-top: 20px;
+}
+
+.media-placeholder {
+    background-color: #555;
+    color: #888;
+    padding: 60px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
