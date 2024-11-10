@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GameCentric</title>
+        <base href="/">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+        <!-- Links of CSS files -->
+        <style>
+            @charset "UTF-8";:root {
+                --bs-blue: #0d6efd;
+                --bs-indigo: #6610f2;
+                --bs-purple: #6f42c1;
+                --bs-pink: #d63384;
+                --bs-red: #dc3545;
+                --bs-orange: #fd7e14;
+                --bs-yellow: #ffc107;
+                --bs-green: #198754;
+                --bs-teal: #20c997;
+                --bs-cyan: #0dcaf0;
+                --bs-white: #fff;
+                --bs-gray: #6c757d;
+                --bs-gray-dark: #343a40;
+                --bs-primary: #0d6efd;
+                --bs-secondary: #6c757d;
+                --bs-success: #198754;
+                --bs-info: #0dcaf0;
+                --bs-warning: #ffc107;
+                --bs-danger: #dc3545;
+                --bs-light: #f8f9fa;
+                --bs-dark: #212529;
+                --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+                --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+            }
+
+            *,::after,::before {
+                box-sizing: border-box
+            }
+
+            @media (prefers-reduced-motion:no-preference) {
+                :root {
+                    scroll-behavior: smooth
+                }
+            }
+
+            body {
+                margin: 0;
+                font-family: var(--bs-font-sans-serif);
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                -webkit-text-size-adjust: 100%;
+                -webkit-tap-highlight-color: transparent
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        </noscript>
+        <style>
+            @charset "UTF-8"</style>
+        <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+        </noscript>
+        <style>
+            @font-face {
+                font-family: 'boxicons';
+                font-weight: normal;
+                font-style: normal;
+                src: url('../fonts/boxicons.eot');
+                src: url('../fonts/boxicons.eot') format('embedded-opentype'),url('../fonts/boxicons.woff2') format('woff2'),url('../fonts/boxicons.woff') format('woff'),url('../fonts/boxicons.ttf') format('truetype'),url('../fonts/boxiconsd41d.svg?#boxicons') format('svg')
+            }
+
+            .bx {
+                font-family: 'boxicons'!important;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                display: inline-block;
+                text-transform: none;
+                speak: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale
+            }
+
+            .bx-up-arrow-alt:before {
+                content: "\ec1e"
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/boxicons.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        </noscript>
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        </noscript>
+        <style>
+            @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/flaticon.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+        </noscript>
+        <link rel="stylesheet" href="assets/css/fancybox.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/fancybox.min.css">
+        </noscript>
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        </noscript>
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        </noscript>
+        <!-- <link rel="stylesheet" href="assets/css/new-style.css"> -->
+        <style>
+            :root {
+                --fontFamily10: "Rajdhani-Bold";
+                --fontFamily2: "Rajdhani-light";
+                --fontFamily3: "Rajdhani-Medium";
+                --fontFamily11: "Bai Jamjuree Bold";
+                --fontFamily12: "Bai jamjuree-Medium";
+                --fontFamily13: "Bai Jamjuree Regular";
+                --mainColor: #fc0820;
+                --whiteColor: #ffffff;
+                --blackColor: #0c0305;
+                --fontSize: 18px;
+                --transition: 0.5s;
+                --siteColor: #01F801;
+                --bgMain: linear-gradient(180deg, #EFEFEF -112.5%, #000000 113.04%);
+                --sideNavBg: linear-gradient(180deg, #752F75 0%, #DD3CDD 60.98%);
+                --pinkColor: #DE3CDE;
+                --footerBg: linear-gradient(90deg, #FB40FB 0%, #763076 100%);
+                --gc__green: #01F801;
+                --gc__grey: #3E3E3E;
+                --gc__white: #ffffff;
+                --gc__black: #000000
+            }
+
+            body {
+                color: var(--whiteColor);
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden;
+                font-family: var(--fontFamily13);
+                font-size: var(--fontSize);
+                width: 100%;
+                background-color: #100e0f!important
+            }
+
+            .go-top {
+                position: fixed;
+                cursor: pointer;
+                bottom: 20px;
+                right: 0;
+                background-color: var(--gc__green);
+                color: var(--gc__black);
+                z-index: 4;
+                width: 30px;
+                text-align: center;
+                height: 35px;
+                opacity: 0;
+                visibility: hidden;
+                font-size: 27px;
+                -webkit-transition: var(--transition);
+                transition: var(--transition);
+                -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1)
+            }
+
+            .go-top i {
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .go-top:hover {
+                background-color: var(--gc__grey);
+                color: var(--gc__white)
+            }
+
+            .mat-typography {
+            }
+
+            @media only screen and (max-width: 767px) {
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/style.css">
+        </noscript>
+        <style>
+            :root {
+                --fontFamily1: "Bai Jamjuree Bold";
+                --fontFamily2: "Bai jamjuree-Medium";
+                --fontFamily4: "Bai Jamjuree Regular";
+                --mainColor: #fc0820;
+                --whiteColor: #ffffff;
+                --blackColor: #0c0305;
+                --fontSize: 18px;
+                --transition: 0.5s;
+                --siteColor: #01F801;
+                --bgMain: linear-gradient(180deg, #EFEFEF -112.5%, #000000 113.04%);
+                --sideNavBg: linear-gradient(180deg, #752F75 0%, #DD3CDD 60.98%);
+                --pinkColor: #DE3CDE;
+                --footerBg: linear-gradient(90deg, #FB40FB 0%, #763076 100%);
+                --gc_linearBg: linear-gradient(180deg, #000 0%, #3E3E3E 100%);
+                --gc__green: #01F801;
+                --gc__grey: #3E3E3E;
+                --gc__white: #ffffff;
+                --gc__black: #000000;
+                --gc__colors: var(--gc__green), var(--gc__grey), var(--gc__white), var(--gc__black)
+            }
+
+            body,html {
+                margin: 0;
+                padding: 0
+            }
+
+            * {
+                box-sizing: border-box
+            }
+
+            html {
+                scrollbar-width: thin;
+                scrollbar-color: var(--gc__green) transparent
+            }
+
+            html::-webkit-scrollbar-thumb {
+                background-color: var(--gc__green);
+                border-radius: 0%;
+                border: 1px solid transparent;
+                background-clip: padding-box
+            }
+
+            .go-top {
+                position: fixed;
+                cursor: pointer;
+                bottom: 20px;
+                right: 0;
+                background-color: var(--gc__green);
+                color: var(--gc__black);
+                z-index: 4;
+                width: 30px;
+                text-align: center;
+                height: 35px;
+                opacity: 0;
+                visibility: hidden;
+                font-size: 27px;
+                -webkit-transition: var(--transition);
+                transition: var(--transition);
+                -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1)
+            }
+
+            .go-top i {
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .go-top:hover {
+                background-color: var(--gc__grey);
+                color: var(--gc__white)
+            }
+
+            @property --pgPercentage {
+                syntax: '<number>';
+                inherits: false;
+                initial-value: 0
+            }
+
+            @media screen and (min-width: 280px) and (max-device-width:479px) {
+            }
+
+            @media screen and (min-width: 480px) and (max-device-width:767px) {
+            }
+
+            @media (max-width: 767px) {
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+            }
+
+            @media screen and (min-device-width: 1025px) and (max-device-width:1199px) {
+            }
+
+            @media screen and (min-width: 1200px) and (max-width:1368px) {
+            }
+
+            @media screen and (min-width: 1370px) and (max-width:1539px) {
+            }
+
+            @media screen and (min-width: 1540px) and (max-width:1679px) {
+            }
+
+            @media screen and (min-width: 1921px) and (max-width: 2120px) {
+            }
+
+            @media screen and (min-width: 1900px) {
+            }
+
+            @media screen and (width >= 1900px) {
+            }
+
+            @media screen and (1600px <= width <= 1900px) {
+            }
+
+            @media screen and (350px <= width <= 420px) {
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/user/new-user.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/user/new-user.css">
+        </noscript>
+        <style>
+            @media screen and (min-width: 280px) and (max-device-width:479px) {
+            }
+
+            @media screen and (min-width: 577px) and (max-device-width:767px) {
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/card.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/card.css">
+        </noscript>
+        <style>
+            @media all and (min-width: 1682px) and (max-width: 1920px) {
+            }
+
+            @media only screen and (max-width: 767px) {
+                body {
+                    font-size:16px
+                }
+            }
+
+            @media screen and (min-width: 1550px) {
+            }
+
+            @media screen and (max-width: 575px) {
+            }
+
+            @media screen and (max-width: 320px) {
+                .go-top {
+                    width:34px;
+                    height: 36px;
+                    font-size: 25px
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+            }
+
+            @media screen and (min-width: 1550px) {
+            }
+
+            @media screen and (min-width: 1920px) {
+            }
+
+            @media only screen and (max-width: 575px) {
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/responsive.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/responsive.css">
+        </noscript>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <style type="text/css">
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <style type="text/css">
+            @font-face {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/materialicons/v141/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+            }
+
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 24px;
+                line-height: 1;
+                letter-spacing: normal;
+                text-transform: none;
+                display: inline-block;
+                white-space: nowrap;
+                word-wrap: normal;
+                direction: ltr;
+                -webkit-font-feature-settings: 'liga';
+                -webkit-font-smoothing: antialiased;
+            }
+        </style>
+        <!--<link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <style type="text/css">
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUtiYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUJiYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUliYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUZiYySUhiCXAA.woff) format('woff');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="assets/css/lightbox.min.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/lightbox.min.css">
+        </noscript>
+        <style type="text/css">
+            @font-face {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/dosis/v32/HhyaU5sn9vOmLzlnC_WoEoZKdbA.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/dosis/v32/HhyaU5sn9vOmLzlmC_WoEoZKdbA.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/dosis/v32/HhyaU5sn9vOmLzloC_WoEoZK.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/dosis/v32/HhyaU5sn9vOmLzlnC_WoEoZKdbA.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/dosis/v32/HhyaU5sn9vOmLzlmC_WoEoZKdbA.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Dosis';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/dosis/v32/HhyaU5sn9vOmLzloC_WoEoZK.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdouNRXRxSjbcu.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdq-NRXRxSjbcu.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdo-NRXRxSjbcu.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdrONRXRxSjbcu.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdoONRXRxSjbcu.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdoeNRXRxSjbcu.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOjEADFm8hSaQTFG18FErVhsC9x-tarWZXdr-NRXRxSjQ.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMl0cjRYhY8XEA.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMB0cjRYhY8XEA.woff2) format('woff2');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMh0cjRYhY8XEA.woff2) format('woff2');
+                unicode-range: U+1F00-1FFF;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMd0cjRYhY8XEA.woff2) format('woff2');
+                unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMt0cjRYhY8XEA.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMp0cjRYhY8XEA.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Fira Sans Condensed';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/firasanscondensed/v10/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWTnMuMR0cjRYhY8.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUtiYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUJiYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUliYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUhiYySUhiCXABTV.woff) format('woff');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/oswald/v53/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUZiYySUhiCXAA.woff) format('woff');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Unica One';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/unicaone/v18/DPEuYwWHyAYGVTSmalsRft3emkUrFZf1.woff2) format('woff2');
+                unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+            }
+
+            @font-face {
+                font-family: 'Unica One';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/unicaone/v18/DPEuYwWHyAYGVTSmalsRf93emkUrFZf1.woff2) format('woff2');
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            @font-face {
+                font-family: 'Unica One';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/unicaone/v18/DPEuYwWHyAYGVTSmalsRcd3emkUrFQ.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/038792bdf1.js" crossorigin="anonymous"></script>
+        <!-- social sharing -->
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+        <!-- <script src="assets/social-share/js/socialSharing.js"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap'); </style>
+        <style>
+            @charset "UTF-8";:root {
+                --bs-blue: #0d6efd;
+                --bs-indigo: #6610f2;
+                --bs-purple: #6f42c1;
+                --bs-pink: #d63384;
+                --bs-red: #dc3545;
+                --bs-orange: #fd7e14;
+                --bs-yellow: #ffc107;
+                --bs-green: #198754;
+                --bs-teal: #20c997;
+                --bs-cyan: #0dcaf0;
+                --bs-black: #000;
+                --bs-white: #fff;
+                --bs-gray: #6c757d;
+                --bs-gray-dark: #343a40;
+                --bs-gray-100: #f8f9fa;
+                --bs-gray-200: #e9ecef;
+                --bs-gray-300: #dee2e6;
+                --bs-gray-400: #ced4da;
+                --bs-gray-500: #adb5bd;
+                --bs-gray-600: #6c757d;
+                --bs-gray-700: #495057;
+                --bs-gray-800: #343a40;
+                --bs-gray-900: #212529;
+                --bs-primary: #0d6efd;
+                --bs-secondary: #6c757d;
+                --bs-success: #198754;
+                --bs-info: #0dcaf0;
+                --bs-warning: #ffc107;
+                --bs-danger: #dc3545;
+                --bs-light: #f8f9fa;
+                --bs-dark: #212529;
+                --bs-primary-rgb: 13,110,253;
+                --bs-secondary-rgb: 108,117,125;
+                --bs-success-rgb: 25,135,84;
+                --bs-info-rgb: 13,202,240;
+                --bs-warning-rgb: 255,193,7;
+                --bs-danger-rgb: 220,53,69;
+                --bs-light-rgb: 248,249,250;
+                --bs-dark-rgb: 33,37,41;
+                --bs-primary-text-emphasis: #052c65;
+                --bs-secondary-text-emphasis: #2b2f32;
+                --bs-success-text-emphasis: #0a3622;
+                --bs-info-text-emphasis: #055160;
+                --bs-warning-text-emphasis: #664d03;
+                --bs-danger-text-emphasis: #58151c;
+                --bs-light-text-emphasis: #495057;
+                --bs-dark-text-emphasis: #495057;
+                --bs-primary-bg-subtle: #cfe2ff;
+                --bs-secondary-bg-subtle: #e2e3e5;
+                --bs-success-bg-subtle: #d1e7dd;
+                --bs-info-bg-subtle: #cff4fc;
+                --bs-warning-bg-subtle: #fff3cd;
+                --bs-danger-bg-subtle: #f8d7da;
+                --bs-light-bg-subtle: #fcfcfd;
+                --bs-dark-bg-subtle: #ced4da;
+                --bs-primary-border-subtle: #9ec5fe;
+                --bs-secondary-border-subtle: #c4c8cb;
+                --bs-success-border-subtle: #a3cfbb;
+                --bs-info-border-subtle: #9eeaf9;
+                --bs-warning-border-subtle: #ffe69c;
+                --bs-danger-border-subtle: #f1aeb5;
+                --bs-light-border-subtle: #e9ecef;
+                --bs-dark-border-subtle: #adb5bd;
+                --bs-white-rgb: 255,255,255;
+                --bs-black-rgb: 0,0,0;
+                --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+                --bs-gradient: linear-gradient(180deg,#ffffff26,#fff0);
+                --bs-body-font-family: var(--bs-font-sans-serif);
+                --bs-body-font-size: 1rem;
+                --bs-body-font-weight: 400;
+                --bs-body-line-height: 1.5;
+                --bs-body-color: #212529;
+                --bs-body-color-rgb: 33,37,41;
+                --bs-body-bg: #fff;
+                --bs-body-bg-rgb: 255,255,255;
+                --bs-emphasis-color: #000;
+                --bs-emphasis-color-rgb: 0,0,0;
+                --bs-secondary-color: #212529bf;
+                --bs-secondary-color-rgb: 33,37,41;
+                --bs-secondary-bg: #e9ecef;
+                --bs-secondary-bg-rgb: 233,236,239;
+                --bs-tertiary-color: #21252980;
+                --bs-tertiary-color-rgb: 33,37,41;
+                --bs-tertiary-bg: #f8f9fa;
+                --bs-tertiary-bg-rgb: 248,249,250;
+                --bs-heading-color: inherit;
+                --bs-link-color: #0d6efd;
+                --bs-link-color-rgb: 13,110,253;
+                --bs-link-decoration: underline;
+                --bs-link-hover-color: #0a58ca;
+                --bs-link-hover-color-rgb: 10,88,202;
+                --bs-code-color: #d63384;
+                --bs-highlight-bg: #fff3cd;
+                --bs-border-width: 1px;
+                --bs-border-style: solid;
+                --bs-border-color: #dee2e6;
+                --bs-border-color-translucent: rgba(0,0,0,.175);
+                --bs-border-radius: 0.375rem;
+                --bs-border-radius-sm: 0.25rem;
+                --bs-border-radius-lg: 0.5rem;
+                --bs-border-radius-xl: 1rem;
+                --bs-border-radius-xxl: 2rem;
+                --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+                --bs-border-radius-pill: 50rem;
+                --bs-box-shadow: 0 0.5rem 1rem #00000026;
+                --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+                --bs-box-shadow-lg: 0 1rem 3rem rgba(0,0,0,.175);
+                --bs-box-shadow-inset: inset 0 1px 2px rgba(0,0,0,.075);
+                --bs-focus-ring-width: 0.25rem;
+                --bs-focus-ring-opacity: 0.25;
+                --bs-focus-ring-color: #0d6efd40;
+                --bs-form-valid-color: #198754;
+                --bs-form-valid-border-color: #198754;
+                --bs-form-invalid-color: #dc3545;
+                --bs-form-invalid-border-color: #dc3545
+            }
+
+            *,:after,:before {
+                box-sizing: border-box
+            }
+
+            @media (prefers-reduced-motion:no-preference) {
+                :root {
+                    scroll-behavior: smooth
+                }
+            }
+
+            body {
+                margin: 0;
+                font-family: var(--bs-body-font-family);
+                font-size: var(--bs-body-font-size);
+                font-weight: var(--bs-body-font-weight);
+                line-height: var(--bs-body-line-height);
+                color: var(--bs-body-color);
+                text-align: var(--bs-body-text-align);
+                background-color: var(--bs-body-bg);
+                -webkit-text-size-adjust: 100%;
+                -webkit-tap-highlight-color: transparent
+            }
+
+            :root {
+                --bs-breakpoint-xs: 0;
+                --bs-breakpoint-sm: 576px;
+                --bs-breakpoint-md: 768px;
+                --bs-breakpoint-lg: 992px;
+                --bs-breakpoint-xl: 1200px;
+                --bs-breakpoint-xxl: 1400px
+            }
+
+            .mat-typography {
+                font: 400 14px/20px Roboto,Helvetica Neue,sans-serif;
+                letter-spacing: normal
+            }
+
+            body {
+                background-size: cover!important;
+                background: url(bg-main.030d9de812b4efeb3bca.webp) no-repeat;
+                background-attachment: fixed
+            }
+
+            body {
+                background-color: #262829!important
+            }
+        </style>
+        <link rel="stylesheet" href="styles.5edbd38ff59e3bc940a5.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="styles.5edbd38ff59e3bc940a5.css">
+        </noscript>
+    </head>
+    <body class="mat-typography">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCPTGRBT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- End Google Tag Manager (noscript) -->
+        <app-root></app-root>
+        <div class="go-top">
+            <i class="bx bx-up-arrow-alt"></i>
+        </div>
+        <!-- Links of JS files -->
+        <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/magnific-popup.min.js"></script>
+        <script src="assets/js/parallax.min.js"></script>
+        <script src="assets/js/meanmenu.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/cursor.min.js"></script>
+        <script src="assets/js/fancybox.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/form-validator.min.js"></script>
+        <script src="assets/js/contact-form-script.js"></script>
+        <script src="assets/js/ajaxchimp.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/carousel-media.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+        <!--  <script src="node_modules/core-js/client/shim.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.14/es5-shim.min.js"></script>
+        <!-- Automatically provides/replaces `Promise` if missing or broken. -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+        <!-- Minified version of `es6-promise-auto` below. -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+        <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5QP3FKKNX1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-5QP3FKKNX1');
+        </script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0]
+                  , j = d.createElement(s)
+                  , dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-MCPTGRBT');
+        </script>
+        <!-- End Google Tag Manager -->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+                //alert("This is an alert message!");
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+
+            }
+        </script>
+        <!--  store script-->
+        <script>
+            function openNav() {
+                document.getElementById('img').className = 'store-logo';
+            }
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+        </script>
+        <!-- ----------------image over video in stream----------------- -->
+        <script>
+            $(document).ready(function() {
+                // $('#play-video').on('click', function(ev) {
+                // 	this.style.display = 'none';
+                // 	thevid = document.getElementById('video');
+                // 	thevid.style.display = 'block';
+                // 	$("#video")[0].src += "?autoplay=1";
+                // 	ev.preventDefault();
+                // });
+
+                $('.video-container').on('click', function(ev) {
+                    var youtubeId = $(this).data('youtube');
+
+                    $(this).find('img').fadeOut('slow');
+
+                    var iframe = document.createElement("iframe");
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "");
+                    iframe.setAttribute("style", "width:100%;height:315px;");
+                    iframe.setAttribute("src", "https://www.youtube.com/watch?v=ZpA12AIvOGE" + youtubeId + "?rel=0&controls=1&showinfo=0&autoplay=1");
+                    this.innerHTML = "";
+                    this.appendChild(iframe);
+                });
+            });
+        </script>
+        <!-- <script>
+    (async function() {
+      console.log('Initializing.....');
+      const theaSDK = await TheaSDK.init({
+        network: TheaNetwork.MUMBAI,
+        web3Provider: new ethers.providers.Web3Provider(window.ethereum)
+      });
+      console.log('theaSDK ', theaSDK);
+    })();
+  </script> -->
+        <!-- ------------------owl carousel--------------------------------------------------- -->
+        <script src="runtime.c618b3948583b6e5c144.js" defer></script>
+        <script src="polyfills.fd4c17f865514a943254.js" defer></script>
+        <script src="main.34561abbb74091c7a822.js" defer></script>
+    </body>
+</html>

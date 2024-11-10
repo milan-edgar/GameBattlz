@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Arena</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>GameCentric</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tournaments">Tournaments</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#arena">Arena</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Discover the Best in Gaming</h2>
+        <p>Latest tournaments, rewards, and community updates.</p>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments">
+        <h3>Game Tournaments</h3>
+        <p>Stay updated on upcoming and ongoing tournaments.</p>
+        <div class="media-placeholder">[Image or Video Placeholder]</div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard">
+        <h3>Leaderboard</h3>
+        <p>Top players in the community. Can you make it to the top?</p>
+        <div class="media-placeholder">[Image or Video Placeholder]</div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section id="rewards">
+        <h3>Rewards</h3>
+        <p>Earn rewards and exclusive items through participation and achievements.</p>
+        <div class="media-placeholder">[Image Placeholder]</div>
+    </section>
+
+    <!-- Arena Section -->
+    <section id="arena">
+        <h3>Arena</h3>
+        <p>Battle it out with other players in the arena. Join the action!</p>
+        <div class="media-placeholder">[Image or Video Placeholder]</div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h3>About Us</h3>
+        <p>We are dedicated to bringing gamers together with the latest in gaming news, tournaments, and rewards.</p>
+        <div class="media-placeholder">[Image Placeholder]</div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GameCentric</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

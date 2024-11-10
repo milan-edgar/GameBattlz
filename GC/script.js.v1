@@ -1,0 +1,6 @@
+// Simple alert example for interactivity
+document.querySelectorAll('.media-placeholder').forEach(item => {
+    item.addEventListener('click', () => {
+        alert('More content coming soon!');
+    });
+});
